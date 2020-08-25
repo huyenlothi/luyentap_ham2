@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let num=10;
+    for (let i=0; i<num;i++) {
+        a[i] = prompt("nhap ki tu vao ");
+    }
+    let b=prompt("nhap ki tu kiem tra");
+    function test(n) {
+        let count=0;
+        for (let i=0;i<a.length; i++) {
+            if ( a[i] === n) {
+                count++;
+            }
+        } return count;
+    }
+    let result = test(b);
+    if (result!==0) {
+        document.write("co " + result + " ki tu " + b + " trong mang ");
+    }else
+        document.write(b +" khong co trong mang ki tu");
+</script>
+</body>
+</html>
